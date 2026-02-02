@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="../assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/android-chrome-512x512.png">
+    
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href=../assets/colours.css>
+    <link rel="stylesheet" href="../assets/shared-styles.css">
+    <link rel="stylesheet" href="../assets/module_card.css">
+    
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2D - PF4 - Glossary</title>
+    
+    <style>
+        /* Override sidebar styling since we're not using it */
+        body {
+            background-color: var(--background) !important;
+            color: var(--text-primary);
+            margin: 0 !important;
+            padding: 0 !important;
+            min-height: 100vh;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: flex-start !important;
+            flex-direction: column !important;
+        }
+
+        .main-content {
+            width: 100% !important;
+            max-width: 1200px !important;
+            padding: 0 20px !important;
+            box-sizing: border-box !important;
+            margin: 0 auto !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+        }
+
+        /* Additional centering overrides */
+        #main-content {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: left !important;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo-container img {
+            width: clamp(60px, 10vw, 120px);
+            height: clamp(60px, 10vw, 120px);
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .glossary-entry {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .glossary-entry:last-child {
+            border-bottom: none;
+        }
+
+        .glossary-term {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--remember);
+            margin-bottom: 8px;
+        }
+
+        .glossary-definition {
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .logo-container img {
+                height: 60px;
+            }
+            
+            .glossary-term {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content" class="main-content">
+        <div class="top-navbar">
+            <div class="logo-container">
+                <h1 class="page-title">Python Fundamentals 4 - Glossary</h1>
+            </div>
+        </div>
+
+        <div class="module-card">
+            <div class="module-header">
+                Glossary <span class="module-tag">PF4</span>
+            </div>
+            <div class="module-body">
+                
+                <div class="glossary-entry">
+                    <strong>Append mode (&quot;a&quot;)</strong>: A file mode that adds new content to the end of an existing file without overwriting it.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Binary mode</strong>: A file mode (`&quot;rb&quot;`, `&quot;wb&quot;`) used when reading or writing non-text files such as images, audio, or encoded data.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Call (function call)</strong>: The action of executing a function using its name followed by parentheses, optionally containing arguments.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Default argument</strong>: A parameter that automatically takes a predefined value when no value is provided by the caller.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Docstring</strong>: A triple-quoted string (`&quot;&quot;&quot; &quot;&quot;&quot;`) placed at the start of a function, module, or class describing its purpose, inputs and outputs.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Encoding</strong>: A system that converts text to bytes and back again. Common encodings include UTF-8, used when reading or writing text files.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Exception</strong>: An error detected during execution (e.g., `FileNotFoundError`, `IsADirectoryError`) that can be handled using `try`/`except`.
+                </div>
+                <div class="glossary-entry">
+                    <strong>File handle</strong>: The object returned by `open()`, representing an open file. It can be used to read from or write to that file.
+                </div>
+                <div class="glossary-entry">
+                    <strong>File mode</strong>: A string such as `&quot;r&quot;`, `&quot;w&quot;`, `&quot;a&quot;`, `&quot;rb&quot;` or `&quot;wb&quot;` that tells Python how to open a file (read, write, append, binary).
+                </div>
+                <div class="glossary-entry">
+                    <strong>File path</strong>: The location of a file on your system, which may be absolute (full path) or relative (starting from the current working directory).
+                </div>
+                <div class="glossary-entry">
+                    <strong>finally block</strong>: Part of a `try` statement that executes regardless of whether an exception occurs.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Global scope</strong>: The part of a programme where variables are accessible from anywhere unless shadowed by local variables.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Keyword-only argument</strong>: A function parameter that must be specified using its name when calling the function (e.g., `func(x=10)`).
+                </div>
+                <div class="glossary-entry">
+                    <strong>Lambda function</strong>: A small anonymous function defined using the `lambda` keyword, typically used for short, inline operations.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Local scope</strong>: Variables defined inside a function; they exist only while that function is running.
+                </div>
+                <div class="glossary-entry">
+                    <strong>os module</strong>: A standard-library module providing tools for interacting with the operating system (e.g., directories, paths).
+                </div>
+                <div class="glossary-entry">
+                    <strong>Parameter</strong>: A variable name inside a function definition that receives a value (argument) when the function is called.
+                </div>
+                <div class="glossary-entry">
+                    <strong>PEP 8</strong>: The official Python style guide describing conventions for writing clean, readable, consistent code.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Relative path</strong>: A file path defined relative to the current working directory.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Return value</strong>: The output sent back by a function using the `return` statement.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Scope</strong>: The rules that determine where variables exist and how they can be accessed in a programme.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Syntax error</strong>: An error raised when Python encounters code that does not follow correct syntax (e.g., missing parentheses, incorrect indentation).
+                </div>
+                <div class="glossary-entry">
+                    <strong>try/except</strong>: A structure used to catch and handle exceptions, preventing programmes from crashing.
+                </div>
+                <div class="glossary-entry">
+                    <strong>Tuple unpacking</strong>: Assigning multiple values from a tuple to multiple variables in one statement (e.g., `a, b = func()`).
+                </div>
+                <div class="glossary-entry">
+                    <strong>Whitespace (stylistic)</strong>: Spaces, tabs and blank lines used to improve readability and follow style conventions such as PEP 8.
+                </div>
+                <div class="glossary-entry">
+                    <strong>with statement</strong>: A context manager that automatically handles file opening and closing (`with open(...) as f:`).
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>© Built with parchmentIQ copyright of scryptIQ</div>
+            <div>© L2D is copyright UCL 2025</div>
+        </div>
+    </div>
+</body>
+</html>
+        
